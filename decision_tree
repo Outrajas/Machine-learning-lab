@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="checkin_acc <= 1.5\ngini = 0.421\nsamples = 800\nvalue = [559, 241]\nclass = 0", fillcolor="#f0b78e"] ;
+1 [label="duration <= 22.5\ngini = 0.493\nsamples = 428\nvalue = [240, 188]\nclass = 0", fillcolor="#f9e4d4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="credit_history <= 1.5\ngini = 0.449\nsamples = 235\nvalue = [155, 80]\nclass = 0", fillcolor="#f2c29f"] ;
+1 -> 2 ;
+3 [label="gini = 0.375\nsamples = 24\nvalue = [6, 18]\nclass = 1", fillcolor="#7bbeee"] ;
+2 -> 3 ;
+4 [label="gini = 0.415\nsamples = 211\nvalue = [149, 62]\nclass = 0", fillcolor="#f0b58b"] ;
+2 -> 4 ;
+5 [label="savings_acc <= 2.5\ngini = 0.493\nsamples = 193\nvalue = [85, 108]\nclass = 1", fillcolor="#d5eaf9"] ;
+1 -> 5 ;
+6 [label="gini = 0.47\nsamples = 156\nvalue = [59, 97]\nclass = 1", fillcolor="#b1d9f5"] ;
+5 -> 6 ;
+7 [label="gini = 0.418\nsamples = 37\nvalue = [26, 11]\nclass = 0", fillcolor="#f0b68d"] ;
+5 -> 7 ;
+8 [label="inst_plans <= 1.5\ngini = 0.244\nsamples = 372\nvalue = [319, 53]\nclass = 0", fillcolor="#e9965a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="age <= 44.5\ngini = 0.43\nsamples = 67\nvalue = [46, 21]\nclass = 0", fillcolor="#f1bb93"] ;
+8 -> 9 ;
+10 [label="gini = 0.473\nsamples = 52\nvalue = [32, 20]\nclass = 0", fillcolor="#f5d0b5"] ;
+9 -> 10 ;
+11 [label="gini = 0.124\nsamples = 15\nvalue = [14, 1]\nclass = 0", fillcolor="#e78a47"] ;
+9 -> 11 ;
+12 [label="age <= 30.5\ngini = 0.188\nsamples = 305\nvalue = [273, 32]\nclass = 0", fillcolor="#e89050"] ;
+8 -> 12 ;
+13 [label="gini = 0.307\nsamples = 111\nvalue = [90, 21]\nclass = 0", fillcolor="#eb9e67"] ;
+12 -> 13 ;
+14 [label="gini = 0.107\nsamples = 194\nvalue = [183, 11]\nclass = 0", fillcolor="#e78945"] ;
+12 -> 14 ;
+}
